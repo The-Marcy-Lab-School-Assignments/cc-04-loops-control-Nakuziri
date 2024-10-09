@@ -18,7 +18,7 @@ const countEveryOdd = (num) => {
     }
 }
 
-countEveryOdd(10);
+//countEveryOdd(10);
 
 //3 
 const isNegative = (num) => {
@@ -51,8 +51,30 @@ const sumOfThreeOrFive = () => {
         sum += i 
     }
 }
-    console.log(sum);
+    return sum;
 }
     
 
-sumOfThreeOrFive();
+//console.log(sumOfThreeOrFive());
+
+//6
+
+const isAllLowerCase = (str) => {
+ return !/[A-Z]/.test(str);
+}
+
+//console.log(isAllLowerCase('holdd'));
+
+//Bonus
+
+const countMultiplesOfFive = (Arr) => {
+    let totals = 0
+    for( let i = 0; i <= Arr.length; i++){
+        if(Arr[i] % 5 == 0){
+            totals += 1
+        }
+    }
+    return totals;
+}
+
+console.log(countMultiplesOfFive([10,3,7,5,5,8,15,20,25]));
